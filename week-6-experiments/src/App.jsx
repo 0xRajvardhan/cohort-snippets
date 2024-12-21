@@ -1,18 +1,11 @@
-import { useState } from "react"
 import { Header } from "./components/Header"
+import { HeaderWithButton } from "./components/HeaderWithButton"
 
 function App() {
-  const [title, setTitle] = useState("header 1")
-
-  function updateTitle() {
-    setTitle(Math.random())
-  }
-
   return (
     <>
-      <Header title={title} />
+      <HeaderWithButton />
       <Header title="header 2" />
-      <button onClick={updateTitle}>Click to change the title</button>
     </>
   )
 }
