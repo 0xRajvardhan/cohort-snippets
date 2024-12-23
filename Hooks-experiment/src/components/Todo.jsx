@@ -11,7 +11,7 @@ const Todo = ({ id }) => {
             .then(response => {
                 setTodo(response.data.todo);
             })
-    },);
+    }, [id]);
 
     return (
         <>
