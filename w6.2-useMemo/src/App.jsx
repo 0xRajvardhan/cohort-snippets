@@ -1,25 +1,27 @@
-import { memo, useState } from "react";
+import { memo, useCallback, useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
-  function logSomething() {
+
+  const logSomething = useCallback(() => {
     console.log("child clicked");
-  }
+  }, []);
+
   return (
     <>
       <ButtonComponent inputFunction={logSomething} />
       <button
-        onClick={() => { setCount + 1 }}
+        onClick={() => { setCount(count + 1) }}
       >Click me {count}</button>
     </>
   )
 }
-
+/* eslint-disable */
 const ButtonComponent = memo(({ inputFunction }) => {
   console.log("child render");
   return (
     <>
-      <button onClick={inputFunction}>Button clicked</button>
+      <button>Button clicked</button>
     </>
   )
 })
