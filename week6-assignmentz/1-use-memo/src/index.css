@@ -1,0 +1,8 @@
+/* Center everything in the root */
+html, body {
+    /* height: 100%; */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
