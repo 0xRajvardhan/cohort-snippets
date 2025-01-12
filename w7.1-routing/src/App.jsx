@@ -11,8 +11,8 @@ function App() {
       <BrowserRouter>
         < AppBar />
         <Routes>
-          <Route path="/dashboard" element={<Suspense fallback={"loading..."}><Dashboard /></Suspense>} />
-          <Route path="/" element={<Suspense fallback={"loading..."}><Landing /></Suspense>} />
+          <Route path="/dashboard" element={<Suspense fallback={"loading dashboard page..."}><Dashboard /></Suspense>} />
+          <Route path="/" element={<Suspense fallback={"leading landing page..."}><Landing /></Suspense>} />
         </Routes>
       </BrowserRouter>
     </>
