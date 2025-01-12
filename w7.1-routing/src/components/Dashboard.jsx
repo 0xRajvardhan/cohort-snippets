@@ -1,5 +1,5 @@
 
-export function Dashboard() {
+export default function Dashboard() {
     return (
         <>
             <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>

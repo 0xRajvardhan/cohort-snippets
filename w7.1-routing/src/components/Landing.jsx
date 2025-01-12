@@ -1,8 +1,8 @@
 
-export function Landing() {
+export default function Landing() {
     const styles = {
         container: {
-            
+
         },
         heading: {
             fontSize: '2.5rem',
@@ -23,7 +23,8 @@ export function Landing() {
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer'
-        }};
+        }
+    };
     return (
         <>
             <div style={styles.container}>
