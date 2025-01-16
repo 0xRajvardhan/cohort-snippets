@@ -1,11 +1,14 @@
+import { Count } from "./components/Count"
+import './App.css';
 
 function App() {
 
   return (
     <>
-      hey
-    </>
-  )
+      <h1>Counter</h1>
+      <Count/>
+      </>
+      )
 }
 
-export default App
+      export default App
