@@ -1,6 +1,8 @@
+import { useRecoilValue } from "recoil"
+import { countAtom } from "../store/atoms/count";
 
 export default function CountRenderer() {
-    const count = 0;
+    const count = useRecoilValue(countAtom);
 
     return (
         <>

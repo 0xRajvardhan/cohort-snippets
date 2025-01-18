@@ -1,9 +1,13 @@
+import { useSetRecoilState } from "recoil";
+import { countAtom } from "../store/atoms/count";
+
 export default function Buttons() {
-    const count = 0;
+    const setCount = useSetRecoilState(countAtom);
+    console.log("button rerednered");
     return (
         <>
-            <button onClick={() => setCount(count + 1)}>Increase</button>
-            <button onClick={() => setCount(count - 1)}>Decrease</button>
+            <button onClick={() => setCount(c => c + 1)}>Increase</button>
+            <button onClick={() => setCount(c => c - 1)}>Decrease</button>
         </>
     )
 }
