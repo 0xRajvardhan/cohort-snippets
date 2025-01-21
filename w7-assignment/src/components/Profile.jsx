@@ -3,7 +3,7 @@ const Profile = () => {
     return (
         <div className="profile-container">
             <div className="profile-header">
-                <img src="../../public/dp.jpg" alt="Profile" className="profile-image" />
+                <img src="../../dp.jpg" alt="Profile" className="profile-image" />
                 <h1 className="profile-name">John Doe</h1>
             </div>
             <div className="profile-details">
