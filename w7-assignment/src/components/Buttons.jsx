@@ -1,15 +1,10 @@
 /* eslint-disable */
 
-import { useSetRecoilState } from 'recoil';
-import './Buttons.css';
-import { backgroundColorAtom } from '../store/atoms/color';
-
-const Buttons = (props) => {
-    const setBackgroundColor = useSetRecoilState(backgroundColorAtom);
-
+const Buttons = ({ color, placeholder, changeBackground }) => {
+  
     return (
         <>
-            <button onClick={() => setBackgroundColor(color)} className="custom-button" >{props.placeholder}</button>
+            <button style={{ backgroundColor: color.toLowerCase() }} onClick={() => changeBackground(color)} className="custom-button" >{placeholder}</button>
         </>
     )
 }

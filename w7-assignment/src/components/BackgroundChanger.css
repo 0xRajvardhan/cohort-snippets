@@ -11,7 +11,7 @@
 
 .background-changer button {
     background-color: #4c87af;
-    border: none;
+    border: 1px solid white;
     color: white;
     padding: 15px 32px;
     text-align: center;
