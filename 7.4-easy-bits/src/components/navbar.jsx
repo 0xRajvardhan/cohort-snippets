@@ -1,11 +1,12 @@
 import { useRecoilValue } from "recoil"
-import { jobsAtom, messagingAtom, networkAtom, notificationsAtom } from "../store/atoms"
+import { jobsAtom, messagingAtom, networkAtom, notificationsAtom, totalNotificationAtom } from "../store/atoms"
 
 export function NavBar() {
     const networkAtomCount = useRecoilValue(networkAtom)
     const jobsAtomCount = useRecoilValue(jobsAtom)
     const messagingAtomCount = useRecoilValue(messagingAtom)
     const notificationsAtomCount = useRecoilValue(notificationsAtom)
+    const totalNotification = useRecoilValue(totalNotificationAtom)
     return (
         <>
             <button>Home</button>
@@ -15,7 +16,7 @@ export function NavBar() {
             <button>Messaging {messagingAtomCount >= 100 ? "99+" : messagingAtomCount}</button>
             <button>Notifications {notificationsAtomCount >= 100 ? "99+" : notificationsAtomCount}</button>
 
-            <button>Me</button>
+            <button>Me ({totalNotification})</button>
         </>
     )
 }  
