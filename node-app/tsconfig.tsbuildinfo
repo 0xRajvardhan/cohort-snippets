@@ -1,1 +1,1 @@
-{"root":["./a.ts","./callback.ts","./greet.ts","./islegal.ts","./sum.ts"],"version":"5.7.3"}
+{"root":["./src/a.ts","./src/callback.ts","./src/greet.ts","./src/islegal.ts","./src/sum.ts"],"version":"5.7.3"}
